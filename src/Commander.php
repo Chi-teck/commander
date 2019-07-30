@@ -43,7 +43,7 @@ class Commander {
     $container = $this->bootstrap();
     $commands = $this->getCommands($container);
 
-    $application = new Application('Drupal', \Drupal::VERSION);
+    $application = new Application('Drupal Commander');
     $application->addCommands($commands);
     $application->run();
   }
