@@ -14,7 +14,7 @@ vendor/bin/commander
 ## Command Authoring
 1. Create a command according to [symfony/console](https://symfony.com/doc/3.4/components/console.html) documentation.
 2. Optionally, implement `Commander/DrupalAwareInterface` to indicate that the command needs fully bootstrapped Drupal installation.
-3. Register the command in _composer.json_
+3. Register the command in _composer.json_.
 ```
 "extra": {
     "commands": ["Foo\\Command\\BarCommand"]

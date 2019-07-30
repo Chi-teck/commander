@@ -13,7 +13,7 @@ if (PHP_SAPI !== 'cli') {
   return;
 }
 
-$autoLoader = require __DIR__ . '/../../../autoload.php';
+$class_loader = require __DIR__ . '/../../../autoload.php';
 
 $commander = new Commander($class_loader, new DrupalFinder());
 $commander->run();
