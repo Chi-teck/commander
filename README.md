@@ -21,7 +21,7 @@ vendor/bin/commander
 }
 ```
 
-Command discovery is performed for all packages in `vendor` directory, enabled modules and themes.
+Command discovery is performed for all packages in _vendor_ directory, enabled modules and themes.
 
 Dependencies can be injected via factory `create` method. For modules it is possible to register a command as service like follows.
 ```
