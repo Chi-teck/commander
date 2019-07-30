@@ -1,0 +1,19 @@
+#!/usr/bin/env php
+<?php
+
+/**
+ * @file
+ * Contains the Drupal console.
+ */
+
+use Commander\Commander;
+use DrupalFinder\DrupalFinder;
+
+if (PHP_SAPI !== 'cli') {
+  return;
+}
+
+$autoLoader = require __DIR__ . '/../../../autoload.php';
+
+$commander = new Commander($class_loader, new DrupalFinder());
+$commander->run();
